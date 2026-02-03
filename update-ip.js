@@ -2,7 +2,7 @@ const axios = require("axios");
 const express = require("express");
 
 // ===== CONFIG =====
-const API_KEY = process.env.DTW_client_Link || "07a3b16462a"; //"PUT_YOUR_CLIENT_LINK_HERE";
+const API_KEY = process.env.DTW_client_Link || "PUT_YOUR_CLIENT_LINK_HERE";
 const PORT = process.env.PORT || 8080;
 
 // ========== you should not need to edit under this line ========= //
@@ -96,3 +96,4 @@ app.get("/healthz", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Status server: http://127.0.0.1:${PORT}/status`);
 });
+
